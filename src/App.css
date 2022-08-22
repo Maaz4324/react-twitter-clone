@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  display: flex;
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+body {
+  overflow: hidden;
+  font-family: "Source Sans Pro", "Arial", sans-serif;
+}
+.mobile_tweet_btn {
+  display: none;
+}
+@media (max-width: 1026px) {
+  .App {
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .App {
+    flex-direction: column-reverse;
+    height: fit-content;
+  }
+  body {
+    overflow: scroll;
+  }
+  .mobile_tweet_btn {
+    display: block;
+    position: fixed;
+    bottom: 12%;
+    left: 80%;
+  }
+  .mobile_tweet_btn button {
+    /* width: 40px; */
+    background-color: #3daef9;
+    border: 0;
+    padding: 12px;
+    border-radius: 50%;
+  }
+  .mobile_tweet_btn button svg {
+    width: 28px;
+    fill: white;
+  }
+}

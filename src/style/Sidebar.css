@@ -1,0 +1,156 @@
+.sidebar_container {
+  width: 25%;
+  min-height: 100vh;
+  display: flex;
+  /* align-items: center; */
+  justify-content: flex-end;
+  background-color: black;
+}
+.sidebar {
+  height: 100%;
+  width: 100%;
+  max-width: 270px;
+  padding: 0 20px;
+  /* min-width: 243px; */
+  background-color: black;
+}
+
+.navlink {
+  /* border: 2px solid blue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+  padding: 7px 15px;
+  margin: 15px 0;
+  border-radius: 30px;
+}
+.navlink h2 {
+  font-weight: 600;
+  font-size: 20px;
+}
+.navlink:hover {
+  background-color: #16181c;
+  cursor: pointer;
+}
+.navlink svg {
+  width: 30px;
+  margin-right: 10px;
+  fill: white;
+}
+.logo svg {
+  width: 46px;
+  fill: white;
+}
+.logo {
+  padding: 15px;
+}
+
+.btn_tweet button {
+  padding: 10px;
+  width: 100%;
+  border-radius: 20px;
+  font-weight: bolder;
+  font-size: 18px;
+  background-color: #3daef9;
+  color: white;
+  border: 0;
+}
+.btn_tweet button:hover {
+  background-color: #1d9bf0;
+}
+
+.btn_tweet button svg {
+  display: none;
+}
+
+@media (max-width: 1290px) {
+  .navlink h2 {
+    display: none;
+  }
+  .sidebar {
+    max-width: 100px;
+    width: 100%;
+  }
+  .btn_tweet button svg {
+    width: 18px;
+    display: block;
+  }
+  .btn_tweet button h3 {
+    display: none;
+  }
+  .bookmark,
+  .list {
+    display: none;
+  }
+  .btn_tweet button {
+    padding: 20px;
+    border-radius: 500px;
+  }
+  .sidebar_container {
+    width: 15%;
+  }
+}
+@media (max-width: 1091px) {
+  .sidebar {
+    max-width: auto;
+    /* width: 90%; */
+  }
+  .sidebar_container {
+    width: 10%;
+  }
+  .navlink svg {
+    width: 25px;
+  }
+  .logo img {
+    width: 40px;
+  }
+}
+@media (max-width: 1026px) {
+  .sidebar_container {
+    width: 100%;
+    max-width: 102px;
+  }
+  .sidebar {
+    max-width: fit-content;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .logo {
+    display: none;
+  }
+  .more {
+    display: none;
+  }
+  .btn_tweet {
+    display: none;
+  }
+  .profile {
+    display: none;
+  }
+  .navlinks {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+  }
+  .sidebar_container {
+    /* position: fixed; */
+    min-height: 0;
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    border-top: 1px solid #424242;
+    padding: 0;
+  }
+  .sidebar {
+    width: 100%;
+    max-width: 500px;
+  }
+}
